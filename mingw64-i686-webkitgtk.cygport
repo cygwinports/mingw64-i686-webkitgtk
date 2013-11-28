@@ -3,7 +3,7 @@ inherit cross gnome2
 
 NAME="mingw64-i686-webkitgtk"
 VERSION=1.10.2
-RELEASE=2
+RELEASE=3
 CATEGORY="Devel"
 SUMMARY="WebKit web browser engine for Win32 toolchain"
 DESCRIPTION="WebKit is an open source web browser engine. WebKit's HTML and
