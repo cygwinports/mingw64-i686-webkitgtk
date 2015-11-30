@@ -1,0 +1,11 @@
+--- origsrc/webkitgtk-2.2.8/Source/WebCore/platform/gtk/FileSystemGtk.cpp	2014-10-01 01:33:55.000000000 -0500
++++ src/webkitgtk-2.2.8/Source/WebCore/platform/gtk/FileSystemGtk.cpp	2015-11-29 21:14:15.439071400 -0600
+@@ -148,7 +148,7 @@ bool getFileMetadata(const String& path,
+     if (filename.isNull())
+         return false;
+ 
+-    struct stat statResult;
++    GStatBuf statResult;
+     gint result = g_stat(filename.data(), &statResult);
+     if (result)
+         return false;
